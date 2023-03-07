@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jack rummler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1 class="Co"><span class="highlight2">Jack Rummler</span></h1>
+                <h2 class="Co"><span class="highlight">geospatial data scientist <br>public policy analyst <br> urbanist enthusiast</span></h2>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/headshot.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span class="highlight">about me</span></h1>
+                    <p>Hey there! I am Jack Rummler - a Florida born, Philadelphia residing lover of all things urban and spatial! I am a sustainability professional turned geospatial data scientist inspired to work at the intersections of urban planning, public policy, and data science. I aspire to work where I can leverage my skillsets in spatial data analysis to build and shift sustainable community outcomes. I am experienced in a variety of programming languages (R, Python, SQL), machine learning/deep learning algorithms, and qualitative research methods. </p>
+                    <p>If that piques your interest, my resume, socials, and portfolio are below. Thanks for stopping by!</p>
+                    <ul class="social-links">
+                        <a href="assets/resume-jtr.pdf" class="resume-button" download="resume-jtr.pdf">resume</a>
+                        <li><a href="https://github.com/jtrummler"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://linkedin.com/in/jackrummler"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="mailto:jtrummler0503@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span class="highlight">portfolio</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/nj2.png" height="800" width="650">
+                    <div class="layer">
+                        <h3>Predicting New Jersey Transit train delays</h3>
+                        <a href="assets/njtransit-adams-rummler.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cluster215.png">
+                    <div class="layer">
+                        <h3>Philadelphia neighborhoods cluster analysis</h3>
+                        <a href="https://jtrummler.github.io/PhillyClusters/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/risk.png">
+                    <div class="layer">
+                        <h3>Latent Risk Prediction of Cannabis Possession Charges in Chicago, IL</h3>
+                        <a href="assets/musa508-hw3.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/nc-house.png">
+                    <div class="layer">
+                        <h3>Home price modeling in Mecklenberg County, North Carolina</h3>
+                        <a href="assets/midterm-508.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/gwr.png">
+                    <div class="layer">
+                        <h3>Regression methods in Philadelphia’s block group average household income</h3>
+                        <a href="assets/hw2-liu-rummler-tanabe.pdf"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/crash-map.png">
+                    <div class="layer">
+                        <h3>Urban Street Networks and Interactive Web Maps: Philadelphia car crashes and fatal shootings</h3>
+                        <a href="https://nbviewer.org/github/jtrummler/philly-crash-map/blob/main/assignment-6-jtrummler.ipynb"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
+  
+</html>

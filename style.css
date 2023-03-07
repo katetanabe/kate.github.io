@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Ce';
+    src: url('assets/century.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Co';
+    src: url('assets/couture.otf') format('opentype');
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+h1{
+    font-family: 'Co';
+}
+h3{
+    font-family: 'Co';
+    font-size: 22px
+}
+p{
+    font-family: 'Ce';
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg4.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    font-family: 'Co';
+    font-size: 30px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    align-items: center;
+}
+nav ul li a{
+    color: white;
+    background-color: #69B366;
+    text-decoration: none;
+    font-size: 18px;
+    align-items: center;
+    margin: 0px
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #69B366;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    align-items: center;
+}
+.header-text{
+    font-family: 'Co';
+    margin-top: 15%;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+}
+.header-text h1{
+    font-size: 110px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.header-text h1 span{
+    color: black;
+    align-items: center;
+}
+.header-text h2{
+    font-family: 'Co';
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.highlight{
+    background-color: #69B366;
+    margin: 2px;
+    opacity: 80%;
+}
+.highlight2{
+    background-color: #CBE466;
+    align-items: center;
+    opacity: 80%
+}
+/* -----------about--------------- */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+    margin-top: 5%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    align-items: center;
+}
+.about-col-2{
+    font-family: "Co";
+    flex-basis: 60%;
+    margin-top: 5%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.resume-button {
+  background-color: #69B366;
+  border: none;
+  color: #fff;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-right: 10px
+}
+.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.social-links li a {
+  display: inline-block;
+  background-color: #69B366;
+  padding: 10px;
+  border: 1px solid #69B366;
+  border-radius: 50%;
+  color: white
+}
+.social-links li a:hover {
+  background-color: #69B366;
+}
+.social-links li a i {
+  font-size: 20px;
+}
+.h1 i{
+    color: #69B366;
+}
+p{
+    font-size:17px
+}
+/* -----------portfolio--------------- */
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+.layer{
+    width: (100% - 80px);
+    height: 0px;
+    background: linear-gradient(#F0F766, #69B366);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+   transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 0px;
+    color: #69B366;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
