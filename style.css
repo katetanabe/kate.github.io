@@ -207,7 +207,7 @@ p{
 .layer{
     width: (100% - 80px);
     height: 0px;
-    background: linear-gradient(#F0F766, #69B366);
+    background: linear-gradient(black, black);
     border-radius: 10px;
     position: absolute;
     left: 0;
