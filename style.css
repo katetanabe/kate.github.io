@@ -103,12 +103,12 @@ nav ul li a:hover::after{
     align-items: center;
 }
 .highlight{
-    background-color: #5B713D;
+    background-color: #D2664B;
     margin: 15px;
     opacity: 80%;
 }
 .highlight2{
-    background-color: #EFA00B;
+    background-color: #5B713D;
     align-items: center;
     margin: 15px;
     opacity: 80%
