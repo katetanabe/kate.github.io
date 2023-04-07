@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Ce';
-    src: url('assets/MS Gothic.ttf') format('truetype');
+    src: url('assets/MS Gothic.ttf') format('opentype');
 }
 @font-face {
     font-family: 'Co';
-    src: url('assets/MS Gothic.ttf') format('truetype');
+    src: url('assets/MS Gothic.ttf') format('opentype');
 }
 html{
     scroll-behavior: smooth;
