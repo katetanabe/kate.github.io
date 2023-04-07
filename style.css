@@ -78,7 +78,6 @@ nav ul li a:hover::after{
 .header-text{
     font-family: 'Co';
     margin-top: 15%;
-    margin: 20px 0;
     font-size: 50px;
     text-align: center;
     align-content: center;
@@ -86,7 +85,6 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 110px;
     margin-top: 20px;
-    margin: 20px 0;
     margin-bottom: 15px;
     align-items: center;
 }
@@ -99,19 +97,18 @@ nav ul li a:hover::after{
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 5px;
-    margin: 20px 0;
     align-items: center;
 }
 .highlight{
     background-color: #D2664B;
     margin: 15px;
-    opacity: 80%;
+    opacity: 100%;
 }
 .highlight2{
     background-color: #5B713D;
     align-items: center;
     margin: 15px;
-    opacity: 80%
+    opacity: 0%
 }
 /* -----------about--------------- */
 #about{
