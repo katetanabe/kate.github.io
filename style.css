@@ -99,13 +99,13 @@ nav ul li a:hover::after{
 }
 .highlight{
     background-color: #5B713D;
-    margin: 5px;
+    margin: 15px;
     opacity: 80%;
 }
 .highlight2{
-    background-color: #6A5B6E;
+    background-color: #EFA00B;
     align-items: center;
-    margin: 5px;
+    margin: 15px;
     opacity: 80%
 }
 /* -----------about--------------- */
@@ -138,7 +138,7 @@ nav ul li a:hover::after{
     color: #fff;
 }
 .resume-button {
-  background-color: #6A5B6E;
+  background-color: #EFA00B;
   border: none;
   color: #ffffff;
   padding: 12px 24px;
@@ -160,9 +160,9 @@ nav ul li a:hover::after{
 }
 .social-links li a {
   display: inline-block;
-  background-color: #6A5B6E;
+  background-color: #EFA00B;
   padding: 10px;
-  border: 1px solid #6A5B6E;
+  border: 1px solid #EFA00B;
   border-radius: 50%;
   color: white
 }
@@ -252,7 +252,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-color:#6A5B6E;  
+        background-color:#EFA00B;  
     }
     .header-text{
         margin-top: 100%;
@@ -266,7 +266,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #6A5B6E;
+        background: #EFA00B;
         position: fixed;
         top: 0;
         right: -200px;
