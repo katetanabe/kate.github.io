@@ -15,18 +15,15 @@ body{
 }
 h1{
     font-family: 'Co';
-    margin: 20px 0;
 }
 h3{
     font-family: 'Co';
     font-size: 22px;
-    margin: 20px 0;
 }
 p{
     font-family: 'Ce';
     font-size: 20px;
     line-height: 1.5;
-    margin: 20px 0;
 }
 #header{
     width: 100%;
@@ -38,7 +35,7 @@ p{
     text-align: center
 }
 .container{
-    padding: 10px 10%;
+    padding: 20px 20%;
 }
 nav{
     font-family: 'Co';
