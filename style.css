@@ -99,12 +99,13 @@ nav ul li a:hover::after{
 }
 .highlight{
     background-color: #5B713D;
-    margin: 2px;
+    margin: 5px;
     opacity: 80%;
 }
 .highlight2{
     background-color: #A5D8FF;
     align-items: center;
+    margin: 5px;
     opacity: 80%
 }
 /* -----------about--------------- */
