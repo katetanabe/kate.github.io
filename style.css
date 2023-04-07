@@ -15,10 +15,12 @@ body{
 }
 h1{
     font-family: 'Co';
+    margin: 20px 0;
 }
 h3{
     font-family: 'Co';
-    font-size: 22px
+    font-size: 22px;
+    margin: 20px 0;
 }
 p{
     font-family: 'Ce';
@@ -76,6 +78,7 @@ nav ul li a:hover::after{
 .header-text{
     font-family: 'Co';
     margin-top: 15%;
+    margin: 20px 0;
     font-size: 50px;
     text-align: center;
     align-content: center;
@@ -83,7 +86,8 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 110px;
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin: 20px 0;
+    margin-bottom: 15px;
     align-items: center;
 }
 .header-text h1 span{
@@ -95,6 +99,7 @@ nav ul li a:hover::after{
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 5px;
+    margin: 20px 0;
     align-items: center;
 }
 .highlight{
