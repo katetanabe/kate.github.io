@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: 'Co';
-    src: url('assets/MS Gothic.ttf') format('opentype');
+    src: url('assets/MS Gothic.ttf') format('truetype');
 }
 html{
     scroll-behavior: smooth;
