@@ -55,7 +55,7 @@ nav ul li{
 }
 nav ul li a{
     color: white;
-    background-color: #5B713D;
+    background-color: #EFA00B;
     text-decoration: none;
     font-size: 18px;
     align-items: center;
@@ -65,7 +65,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #5B713D;
+    background: #EFA00B;
     position: absolute;
     left: 0;
     bottom: -20px;
@@ -108,7 +108,7 @@ nav ul li a:hover::after{
     background-color: #5B713D;
     align-items: center;
     margin: 15px;
-    opacity: 0%
+    opacity: 100%
 }
 /* -----------about--------------- */
 #about{
